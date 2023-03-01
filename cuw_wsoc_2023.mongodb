@@ -1,24 +1,24 @@
 use ('cuw_wsoc_2023');
 
-db.createCollectiom("players");
+db.createCollection("players");
 
 db.players.insertMany(
 [
-    {_id: 0, personal_Details:{First_Name: "Brooke", Last_Name: "Braga", Grade: "Sophomore"}, player_Details:{position: "Goal Keeper", jersey_number: 1}, stats:{goals_scored: 0, assists: 1, goals_saved: 116}},
-    {_id: 1, personal_Details:{First_Name: "Sheridan", Last_Name: "Dorge",Grade: "Sophomore"}, player_Details:{position: "Midfielder", jersey_number: 3}, stats:{goals_scored: 1,assists: 1, goals_saved: 0}},
-    {_id: 2, personal_Details:{First_Name: "Sabrina", Last_Name: "Moore", Grade: "Junior"}, player_Details:{position: "Midfielder", jersey_number: 11}, stats:{goals_scored: 6, assists: 1, goals_saved: 0}},
-    {_id: 3, personal_Details:{First_Name: "Selena", Last_Name: "Esten", Grade: "Senior"}, player_Details:{position: "Forward", jersey_number: 12}, stats:{goals_scored: 18, assists: 7, goals_saved: 4}},
-    {_id: 4, personal_Details:{First_Name: "Carmen", Last_Name: "Rowe", Grade: "Sophomore"}, player_Details:{position: "Defender", jersey_number: 14}, stats:{goals_scored: 0, assists: 2, goals_saved: 2}},
-    {_id: 5, personal_Details:{First_Name: "Sarah", Last_Name: "Klopp", Grade: "Freshman"}, player_Details:{position: "Forward", jersey_number: 15}, stats:{goals_scored: 2, assists: 0, goals_saved: 0}},
-    {_id: 6, personal_Details:{First_Name: "Bella", Last_Name: "Rapp", Grade: "Sophomore"}, player_Details:{position: "Midfielder",jersey_number: 16}, stats:{goals_scored: 2, assists: 5, goals_saved: 0}},
-    {_id: 7, personal_Details:{First_Name: "Anna", Last_Name: "Gong", Grade: "Junior"}, player_Details:{position: "Midfielder", jersey_number: 19}, stats:{goals_scored: 0, assists: 3, goals_saved: 0}},
-    {_id: 8, personal_Details:{First_Name: "Autumn", Last_Name: "Snow", Grade: "Freshman"}, player_Details:{position: "Forward", jersey_number: 22}, stats:{goals_scored: 0, assists: 2, goals_saved: 0}},
-    {_id: 9, personal_Details:{First_Name: "Maddy", Last_Name: "Pertle", Grade: "Sophomore"}, player_Details:{position: "Defender", jersey_number: 24}, stats:{goals_scored: 0, assists: 0, goals_saved: 2}},
-    {_id: 10, personal_Details:{First_Name: "Rowan", Last_Name: "Liljegren", Grade: "Freshman"}, player_Details:{position: "Defender", jersey_number: 25}, stats:{goals_scored: 0, assists: 0, goals_saved: 0}},
-    {_id: 11, personal_Details:{First_Name: "Maya", Last_Name: "Bell", Grade: "Sophomore"}, player_Details:{position: "Forward", jersey_number: 26}, stats:{goals_scored: 2, assists: 0, goals_saved: 0}},
-    {_id: 12, personal_Details:{First_Name: "Sara", Last_Name: "Gille", Grade: "Freshman"}, player_Details:{position: "Defender", jersey_number: 31}, stats:{goals_scored: 0, assists: 0, goals_saved: 0}},
-    {_id: 13, personal_Details:{First_Name: "Brei", Last_Name: "Rozmiarek", Grade: "Freshman"}, player_Details:{position: "Midfielder", jersey_number: 37}, stats:{goals_scored: 0, assists: 0, goals_saved: 0}},
-    {_id: 14, personal_Details:{First_Name: "Anna", Last_Name: "Roskopf", Grade: "Sophomore"}, player_Details:{position: "Defender", jersey_number: 38}, stats:{goals_scored: 0, assists: 0, goals_saved: 0}},
-    {_id: 15, personal_Details:{First_Name: "Thea", Last_Name: "Jurss", Grade: "Sophomore"}, player_Details:{position: "Midfielder", jersey_number: 38}, stats:{goals_scored: 0, assists: 0, goals_saved: 0}}
+    {personal_Details:{First_Name: "Brooke", Last_Name: "Braga", Grade: "Sophomore"}, player_Details:{position: "Goal Keeper", jersey_number: 1}, stats:{goals_scored: 0, assists: 1, goals_saved: 116}},
+    {personal_Details:{First_Name: "Sheridan", Last_Name: "Dorge",Grade: "Sophomore"}, player_Details:{position: "Midfielder", jersey_number: 3}, stats:{goals_scored: 1,assists: 1, goals_saved: 0}},
+    {personal_Details:{First_Name: "Sabrina", Last_Name: "Moore", Grade: "Junior"}, player_Details:{position: "Midfielder", jersey_number: 11}, stats:{goals_scored: 6, assists: 1, goals_saved: 0}},
+    {personal_Details:{First_Name: "Selena", Last_Name: "Esten", Grade: "Senior"}, player_Details:{position: "Forward", jersey_number: 12}, stats:{goals_scored: 18, assists: 7, goals_saved: 4}},
+    {personal_Details:{First_Name: "Carmen", Last_Name: "Rowe", Grade: "Sophomore"}, player_Details:{position: "Defender", jersey_number: 14}, stats:{goals_scored: 0, assists: 2, goals_saved: 2}},
+    {personal_Details:{First_Name: "Sarah", Last_Name: "Klopp", Grade: "Freshman"}, player_Details:{position: "Forward", jersey_number: 15}, stats:{goals_scored: 2, assists: 0, goals_saved: 0}},
+    {personal_Details:{First_Name: "Bella", Last_Name: "Rapp", Grade: "Sophomore"}, player_Details:{position: "Midfielder",jersey_number: 16}, stats:{goals_scored: 2, assists: 5, goals_saved: 0}},
+    {personal_Details:{First_Name: "Anna", Last_Name: "Gong", Grade: "Junior"}, player_Details:{position: "Midfielder", jersey_number: 19}, stats:{goals_scored: 0, assists: 3, goals_saved: 0}},
+    {personal_Details:{First_Name: "Autumn", Last_Name: "Snow", Grade: "Freshman"}, player_Details:{position: "Forward", jersey_number: 22}, stats:{goals_scored: 0, assists: 2, goals_saved: 0}},
+    {personal_Details:{First_Name: "Maddy", Last_Name: "Pertle", Grade: "Sophomore"}, player_Details:{position: "Defender", jersey_number: 24}, stats:{goals_scored: 0, assists: 0, goals_saved: 2}},
+    {personal_Details:{First_Name: "Rowan", Last_Name: "Liljegren", Grade: "Freshman"}, player_Details:{position: "Defender", jersey_number: 25}, stats:{goals_scored: 0, assists: 0, goals_saved: 0}},
+    {personal_Details:{First_Name: "Maya", Last_Name: "Bell", Grade: "Sophomore"}, player_Details:{position: "Forward", jersey_number: 26}, stats:{goals_scored: 2, assists: 0, goals_saved: 0}},
+    {personal_Details:{First_Name: "Sara", Last_Name: "Gille", Grade: "Freshman"}, player_Details:{position: "Defender", jersey_number: 31}, stats:{goals_scored: 0, assists: 0, goals_saved: 0}},
+    {personal_Details:{First_Name: "Brei", Last_Name: "Rozmiarek", Grade: "Freshman"}, player_Details:{position: "Midfielder", jersey_number: 37}, stats:{goals_scored: 0, assists: 0, goals_saved: 0}},
+    {personal_Details:{First_Name: "Anna", Last_Name: "Roskopf", Grade: "Sophomore"}, player_Details:{position: "Defender", jersey_number: 38}, stats:{goals_scored: 0, assists: 0, goals_saved: 0}},
+    {personal_Details:{First_Name: "Thea", Last_Name: "Jurss", Grade: "Sophomore"}, player_Details:{position: "Midfielder", jersey_number: 38}, stats:{goals_scored: 0, assists: 0, goals_saved: 0}}
 ]
 )
